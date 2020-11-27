@@ -1,0 +1,30 @@
+PODS:
+  - MBCommonKit/Logger (3.0.0)
+  - Realm (10.1.4):
+    - Realm/Headers (= 10.1.4)
+  - Realm/Headers (10.1.4)
+  - RealmSwift (10.1.4):
+    - Realm (= 10.1.4)
+  - SwiftLint (0.41.0)
+
+DEPENDENCIES:
+  - MBCommonKit/Logger (~> 3.0)
+  - RealmSwift (~> 10.1)
+  - SwiftLint (~> 0.30)
+
+SPEC REPOS:
+  https://github.com/CocoaPods/Specs.git:
+    - MBCommonKit
+    - Realm
+    - RealmSwift
+    - SwiftLint
+
+SPEC CHECKSUMS:
+  MBCommonKit: 99cfa577ea7ca7c2163796be4932b15dcc68f98a
+  Realm: 80f4fb2971ccb9adc27a47d0955ae8e533a7030b
+  RealmSwift: 0e566ca714edb377bba8ea0811eafcea0b93734e
+  SwiftLint: c585ebd615d9520d7fbdbe151f527977b0534f1e
+
+PODFILE CHECKSUM: 7f3733f7df656fb4a9529befaf73b96085f977b2
+
+COCOAPODS: 1.10.0

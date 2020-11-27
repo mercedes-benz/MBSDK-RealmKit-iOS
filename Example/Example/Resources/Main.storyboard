@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="Bz6-3P-4e8">
+    <device id="retina4_0" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="RaU-h7-WC0">
+            <objects>
+                <viewController id="Bz6-3P-4e8" customClass="ViewController" customModule="MBRSRealm_Example" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="L0R-RU-mIL"/>
+                        <viewControllerLayoutGuide type="bottom" id="GS8-LI-pm3"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="9F7-qF-kfH">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="SPo-mz-D9h">
+                                <rect key="frame" x="60" y="80" width="200" height="158"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FB0-bh-0DL">
+                                        <rect key="frame" x="0.0" y="0.0" width="200" height="44"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" priority="999" constant="44" id="ESK-Yn-cGH"/>
+                                        </constraints>
+                                        <state key="normal" title="save multiple objects"/>
+                                        <connections>
+                                            <action selector="saveButtonPressed:" destination="Bz6-3P-4e8" eventType="touchUpInside" id="dLA-Ra-wFa"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SGh-ef-V2r">
+                                        <rect key="frame" x="0.0" y="64" width="200" height="44"/>
+                                        <state key="normal" title="fetch data"/>
+                                        <connections>
+                                            <action selector="fetchButtonPressed:" destination="Bz6-3P-4e8" eventType="touchUpInside" id="mHM-jB-kdk"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="W1C-4c-P3s">
+                                        <rect key="frame" x="0.0" y="128" width="200" height="30"/>
+                                        <state key="normal" title="save single object"/>
+                                        <connections>
+                                            <action selector="saveSingleButtonPressed:" destination="Bz6-3P-4e8" eventType="touchUpInside" id="DKC-Q5-Y5w"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="SGh-ef-V2r" firstAttribute="height" secondItem="FB0-bh-0DL" secondAttribute="height" priority="999" id="Ppi-Ad-oQC"/>
+                                    <constraint firstAttribute="width" constant="200" id="ptV-dS-Dz9"/>
+                                </constraints>
+                            </stackView>
+                            <activityIndicatorView hidden="YES" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" hidesWhenStopped="YES" style="whiteLarge" translatesAutoresizingMaskIntoConstraints="NO" id="epG-7b-Elm">
+                                <rect key="frame" x="141.5" y="265.5" width="37" height="37"/>
+                                <color key="color" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </activityIndicatorView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="SPo-mz-D9h" firstAttribute="top" secondItem="9F7-qF-kfH" secondAttribute="top" constant="80" id="EIq-Wu-Vds"/>
+                            <constraint firstItem="epG-7b-Elm" firstAttribute="centerX" secondItem="9F7-qF-kfH" secondAttribute="centerX" id="aWE-uv-Eyj"/>
+                            <constraint firstItem="SPo-mz-D9h" firstAttribute="centerX" secondItem="9F7-qF-kfH" secondAttribute="centerX" id="rzK-kn-ixk"/>
+                            <constraint firstItem="epG-7b-Elm" firstAttribute="centerY" secondItem="9F7-qF-kfH" secondAttribute="centerY" id="y0b-cc-ALB"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="activityIndicatorView" destination="epG-7b-Elm" id="UjA-A5-tQd"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Om3-DT-UZk" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-298" y="141"/>
+        </scene>
+    </scenes>
+</document>
