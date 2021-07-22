@@ -9,6 +9,10 @@
 ![Version](https://img.shields.io/cocoapods/v/MBRealmKit)
 [![swift-package-manager](https://img.shields.io/badge/SPM-compatible-brightgreen)](https://github.com/apple/swift-package-manager)
 
+## This repository is archived.
+
+Mercedes-Benz Mobile SDK is archived and no longer officially supported. You can find more information about this decision in the [news article](https://developer.mercedes-benz.com/news/mercedes-benz-mobile-sdk-sundown) on Mercedes-Benz developer portal.
+
 ## Requirements
 
 - Xcode 10.3 / 11.x / 12.x
